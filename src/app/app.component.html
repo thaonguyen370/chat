@@ -5,7 +5,7 @@
     </p>
     <form *ngIf="!conversation" [formGroup]="conversationFormGroup" (ngSubmit)="getOrcreateConversation()">
         <mat-form-field>
-            <mat-label>Conversation Name</mat-label>
+            <mat-label>Nhập keyword để trò chuyện</mat-label>
             <input type="text" matInput placeholder="abcd" formControlName="name">
         </mat-form-field>&nbsp;
         <button mat-raised-button color="primary" type="submit" [disabled]="!conversationFormGroup.valid" title="Get Or Create Conversation">GetOrCreateConversation</button>
